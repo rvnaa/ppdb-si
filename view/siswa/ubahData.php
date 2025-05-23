@@ -168,14 +168,6 @@ if (!isset($_GET['id'])) {
 										<!-- End Validation -->
 									</div>
 									<div class="form-group">
-										<label>Status Anak</label>
-										<input type="text" class="form-control" name="status_anak" required="" value="<?= $row['Status_Anak']; ?>">
-										<!-- Validation -->
-										<div class="valid-feedback"> Baguss! </div>
-										<div class="invalid-feedback"> Wajib Diisi! </div>
-										<!-- End Validation -->
-									</div>
-									<div class="form-group">
 										<label>Anak Ke</label>
 										<input type="number" class="form-control" name="anak_ke" required="" value="<?= $row['Anak_Ke']; ?>">
 										<!-- Validation -->
