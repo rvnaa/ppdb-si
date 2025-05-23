@@ -230,6 +230,7 @@ if (isset($_POST['tambahDataOrtu'])) {
 																	  tgl_buat = '$tgl_buat' ");
 
 	if ($query) {
+		$_SESSION['status_ortu'] = 1;
 		$_SESSION['alert'] = '<div class="alert alert-success alert-has-icon" id="alert">
 			                        <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
 			                        <div class="alert-body">
@@ -347,6 +348,6 @@ if (isset($_POST['ubahDataOrtu'])) {
 
 // Logout
 if (isset($_GET['logout'])) {
-	unset($_SESSION['nisnPeserta'], $_SESSION['namaPeserta'], $_SESSION['tlPeserta']);
+	unset($_SESSION['nisnPeserta'], $_SESSION['namaPeserta'], $_SESSION['tlPeserta'], $_SESSION['status_ortu']);
 	header('Location: ../../view/halaman');
 }
