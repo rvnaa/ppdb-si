@@ -18,6 +18,7 @@ if (isset($_POST['tambahData'])) {
 	$tinggi_badan		= mysqli_real_escape_string($conn, $_POST['tinggi_badan']);
 	$berat_badan		= mysqli_real_escape_string($conn, $_POST['berat_badan']);
 	$kewarganegaraan	= mysqli_real_escape_string($conn, $_POST['kewarganegaraan']);
+	$status_ortu		= mysqli_real_escape_string($conn, $_POST['status_ortu']);
 	$anak_ke			= mysqli_real_escape_string($conn, $_POST['anak_ke']);
 	$jumlah_saudara		= mysqli_real_escape_string($conn, $_POST['jumlah_saudara']);
 	$alamat_tinggal		= mysqli_real_escape_string($conn, $_POST['alamat_tinggal']);
@@ -43,6 +44,7 @@ if (isset($_POST['tambahData'])) {
 																	  Tinggi_Badan = '$tinggi_badan',
 																	  Berat_Badan = '$berat_badan',
 																	  Kewarganegaraan = '$kewarganegaraan',
+																	  status_ortu = '$status_ortu',
 																	  Anak_Ke = '$anak_ke',
 																	  Jml_Saudara = '$jumlah_saudara',
 																	  Alamat_Tinggal = '$alamat_tinggal',
@@ -98,6 +100,7 @@ if (isset($_POST['ubahData'])) {
 	$tinggi_badan		= mysqli_real_escape_string($conn, $_POST['tinggi_badan']);
 	$berat_badan		= mysqli_real_escape_string($conn, $_POST['berat_badan']);
 	$kewarganegaraan	= mysqli_real_escape_string($conn, $_POST['kewarganegaraan']);
+	$status_ortu		= mysqli_real_escape_string($conn, $_POST['status_ortu']);
 	$anak_ke			= mysqli_real_escape_string($conn, $_POST['anak_ke']);
 	$jumlah_saudara		= mysqli_real_escape_string($conn, $_POST['jumlah_saudara']);
 	$alamat_tinggal		= mysqli_real_escape_string($conn, $_POST['alamat_tinggal']);
@@ -123,6 +126,7 @@ if (isset($_POST['ubahData'])) {
 																 Tinggi_Badan = '$tinggi_badan',
 																 Berat_Badan = '$berat_badan',
 																 Kewarganegaraan = '$kewarganegaraan',
+																 status_ortu = '$status_ortu',
 																 Anak_Ke = '$anak_ke',
 																 Jml_Saudara = '$jumlah_saudara',
 																 Alamat_Tinggal = '$alamat_tinggal',
